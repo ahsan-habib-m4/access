@@ -52,6 +52,7 @@ li.nav-item a {
 	-webkit-box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
 	-moz-box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
 	box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
+    margin-bottom: 10px;
 }
 .card-heade.row {
     border-bottom: 1px solid #ccc;
@@ -71,8 +72,8 @@ li.nav-item a {
 .card-statastics {
 	text-align: center;
 }
-.card-heade  i.fas.fa-plus-circle {
-    font-size: 22px;
+.card-heade i.fas.fa-plus-circle, .card-heade i.fas.fa-check {
+    font-size: 20px;
 }
 .card-statastics{
 	margin-top: 10px;
@@ -147,9 +148,10 @@ a .checkbox {
     margin: auto;
 }
 .btn.add {
-    max-width: 70px;
+    width: 54px;
     font-size: 0.8rem;
     border-radius: 0;
+    padding: 6px;
 }
 button.btn.btn-outline-dark.add.added-btn {
     background-color: #308039;
