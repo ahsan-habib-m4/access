@@ -1,0 +1,179 @@
+/* header */
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 0;
+    background-color: #3a913f !important;
+}
+.navbar-light .navbar-brand {
+    background-color: #000;
+    min-width: 40px;
+    text-align: center;
+}
+.header-title {
+    display: block;
+    position: absolute;
+    left: 50px;
+    color: #fff;
+}
+.header-title h3.title {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.container-fluid.main-container {
+    padding-top: 15px;
+}
+li.nav-item {
+    text-align: center;
+    width: 25%;
+}
+
+ul.nav.nav-pills {
+    background-color: #0077c8;
+}
+ul.nav.nav-pills {
+    background-color: #0077c8;
+    width: 100%;
+}
+li.nav-item a {
+    color: #fff;
+}
+.nav-pills .nav-link.active {
+    background-color: #006298;
+}
+.tabs {
+	margin-top: 10px;
+}
+.search-count-text {
+	text-align: center;
+	margin-top: 10px;
+}
+.card {
+	-webkit-box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
+	-moz-box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
+	box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
+}
+.card-heade.row {
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+}
+.match-title p {
+	background-color: #0077c8;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.2rem;
+}
+.match-text p {
+	text-align: center;
+	width: 90%;
+}
+.card-statastics {
+	text-align: center;
+}
+.card-heade  i.fas.fa-plus-circle {
+    font-size: 22px;
+}
+.card-statastics{
+	margin-top: 10px;
+}
+.card-statastics-icon {
+	font-size: 28px;
+}
+.card-statastics.row p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.card-match {
+    border: 1px solid #e9e9e9;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+.avrg-range p {
+    white-space: nowrap;
+    color: purple;
+    padding-top: 8px;
+    font-size: 0.8rem;
+}
+/* Range bar style */
+.range-bar {
+	margin: auto;
+	width: 100%;
+	height: 10px;
+	background-color: #d9d9d9;
+}
+.your-point {
+	width: 5px;
+	height: 10px;
+	background-color: #0077c8;
+	position: absolute;
+	z-index: 2;
+}
+.avrg-range {
+	height: 10px;
+	background-color: #702f8a;
+	position: absolute;
+}
+.tooltip-inner {
+    background-color: #0077c8;
+}
+.tooltip-arrow,
+.your-point + .tooltip > .tooltip-inner {background-color: #0077c8;}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    border-top-color: #0077c8;
+}
+.match-range-cont {
+    border-left: 1px solid #a8a8a8;
+    height: 27px;
+    border-right: 1px solid #a8a8a8;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 8px;
+}
+a.active .checkbox {
+	background-image: url(../img/radio-check.png);
+    width: 14px;
+    height: 13px;
+    display: block;
+    margin: auto;
+}
+a .checkbox {
+	background-image: url(../img/radio.png);
+    width: 14px;
+    height: 13px;
+    display: block;
+    margin: auto;
+}
+.btn.add {
+    max-width: 70px;
+    font-size: 0.8rem;
+    border-radius: 0;
+}
+button.btn.btn-outline-dark.add.added-btn {
+    background-color: #308039;
+    color: #fff;
+    opacity: 1;
+    border: 0;
+    display: none;
+}
+label.min-lim-num {
+    margin: 0;
+    float: left;
+    margin-top: -30px;
+}
+label.max-lim-num {
+    float: right;
+    margin: 0;
+    margin-top: -30px;
+}
+.filter-container .btn.btn-block {
+    border-radius: 0;
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+
+
+}
