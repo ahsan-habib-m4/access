@@ -25,7 +25,7 @@
 
     <div class="container-fluid main-container">
       <div class="row-fluid filter-container">
-        <button type="button" class="btn btn-outline-dark btn-lg btn-block"><i class="fas fa-sliders-h"></i> Filters (0)</button>
+        <button id="filter-btn" class="btn btn-outline-dark btn-lg btn-block" data-toggle="modal" data-target="#filter-modal"><i class="fas fa-sliders-h"></i> Filters (<span class="filter-count">0</span>)</button>
       </div>
       <div class="row tabs">
         <ul class="nav nav-pills">
@@ -176,7 +176,100 @@
         </div>
       </div>
     </div>
-  
+    <!-- Filter modal-->
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-sliders-h"></i> Filters (<span class="filter-count">0</span>)</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Location section -->
+              <div class="filter-item location">
+                <p class="filter-title">Location</p>
+                <div class="form-group">
+                  <label for="region">Regions/States</label>
+                  <select class="form-control" id="region">
+                    <option>Select region or State</option>
+                    <option>2</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Year section -->
+              <div class="filter-item year">
+                <p class="filter-title">2-Year or 4-Year</p>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="year1" value="year1">
+                    <label for="year1" class="checkbox-image"></label>
+                    <label class="form-check-label" for="year1">2-year/community college</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="year2" value="year2">
+                    <label for="year2" class="checkbox-image"></label>
+                    <label class="form-check-label" for="year2">4-year/community college</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Public or Private -->
+              <div class="filter-item public-private">
+                <p class="filter-title">Public or Private</p>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="public" value="Public">
+                    <label for="public" class="checkbox-image"></label>
+                    <label class="form-check-label" for="public">Public</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="private" value="Private">
+                    <label for="private" class="checkbox-image"></label>
+                    <label class="form-check-label" for="private">Private</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- School Size -->
+              <div class="filter-item school-size">
+                <p class="filter-title">School Size</p>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="small" value="small">
+                    <label for="small" class="checkbox-image"></label>
+                    <label class="form-check-label" for="small">Small (Less than 2,000)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="medium" value="medium">
+                    <label for="medium" class="checkbox-image"></label>
+                    <label class="form-check-label" for="medium">Medium (2,000-15,000)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="large" value="large">
+                    <label for="large" class="checkbox-image"></label>
+                    <label class="form-check-label" for="large">Large (Greater than 15,000)</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <a class="clear-all-btn" >Clear All</a>
+              <button type="button" class="btn btn-primary apply-btn" data-dismiss="modal">Apply</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>

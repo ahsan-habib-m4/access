@@ -261,6 +261,126 @@ label.max-lim-num {
     color: #fff;
 }
 
+/* Filter popup modal style*/
+.modal-open .modal {
+    z-index: 1071;
+}
+.modal-title {
+    line-height: 23px;
+    font-size: 23px;
+    font-weight: 700;
+}
+.modal-header .close {
+    color: #1e1e1e;
+    opacity: 1;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    margin-top: -8px;
+}
+.modal-header {
+    padding: 1rem 0rem;
+    width: 91%;
+    margin: auto;
+    border-bottom: 2px solid #1e1e1e;
+}
+.modal-body p.filter-title {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+.form-group label {
+    font-size: 16px;
+    line-height: 16px;
+    color: #62625b;
+}
+
+select.form-control {
+    border: solid 1px #d9d9d9;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 0px 16px;
+    border-right: 0;
+    color: #62625b;
+    line-height: 44px;
+    height: 48px;
+    background: #ffffff url(../img/select-arrow.png) no-repeat scroll right center;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.modal .form-check input[type="checkbox"] {
+    display: none;
+}
+.modal .form-check input[type=checkbox]:checked + label {
+    background-image: url(../img/checked.png);
+    height: 16px;
+    width: 16px;
+}
+.modal .form-check input[type=checkbox] + label {
+    background-image: url(../img/check.png);
+    height: 16px;
+    width: 16px;
+    margin-bottom: -2px;
+    margin-right: 3px;
+}
+.filter_box .primary_filter label>span, .primary_filter2 label>span {
+    position: relative;
+    top: -4px;
+}
+.modal .form-check {
+    padding-left: 0;
+}
+.modal .filter-item {
+    border-bottom: 1px solid #979797;
+    margin-bottom: 17px;
+    padding: 0px 29px;
+}
+.modal .form-group {
+    margin-bottom: 20px;
+}
+.filter-item.school-size {
+    border-bottom: 0;
+    margin-bottom: 0px;
+}
+.filter-item.school-size .form-group {
+    margin-bottom: 10px;
+}
+.modal-footer {
+    border-color: #979797;
+}
+.modal-footer button.btn.btn-primary {
+    background-color: #fedb00;
+    width: 113px;
+    height: 48px;
+    border-color: #979797;
+    border-radius: 0;
+}
+.modal-footer button.btn.btn-primary {
+    background-color: #fedb00;
+    width: 113px;
+    height: 48px;
+    font-size: 15px;
+    border-color: #979797;
+    border-radius: 0;
+    line-height: 21px;
+    font-weight: 700;
+    color: #1e1e1e;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.4px;
+}
+.modal-footer .clear-all-btn {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #505050;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.4px;
+    text-decoration: underline !important;
+}
 @media (max-width: 320px) { 
 .col-3.add-btn-cont {
     padding-left: 10px;

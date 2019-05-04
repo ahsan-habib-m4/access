@@ -10,6 +10,17 @@ $( document ).ready(function() {
 		$(this).siblings(".add-btn").show();
 	})
 
-  $(".your-point").tooltip('show')
+  	$(".your-point").tooltip('show');
+
+  	$('.form-check-input').click(function() {
+	  var check = $('#filter-modal').find('input[type=checkbox]:checked').length;
+	  $(".filter-count").html(check);
+	});
+  	$('.clear-all-btn').click(function() {
+	  $('#filter-modal').find('input[type=checkbox]:checked').prop("checked", false);
+	  $(".filter-count").html("0");
+	});
+
+
 });
   
