@@ -1,31 +1,54 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #505050;
+}
 /* header */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding: 0;
     background-color: #3a913f !important;
+    height: 44px;
 }
 .navbar-light .navbar-brand {
     background-color: #000;
-    min-width: 40px;
+    min-width: 44px;
+    padding: 0;
     text-align: center;
+    height: 44px;
+    margin: 0;
+    line-height: 36px;
 }
 .header-title {
     display: block;
     position: absolute;
-    left: 50px;
+    left: 55px;
     color: #fff;
 }
 .header-title h3.title {
     font-size: 20px;
     padding: 0;
+    line-height: 0;
     margin: 0;
     font-weight: bold;
+}
+.nav-pills .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    letter-spacing: 0.4px;
+    border-radius: 0;
+    padding-top: 10px;
 }
 .container-fluid.main-container {
     padding-top: 15px;
 }
 li.nav-item {
     text-align: center;
-    width: 25%;
+    width: 23.9%;
 }
 
 ul.nav.nav-pills {
@@ -34,6 +57,8 @@ ul.nav.nav-pills {
 ul.nav.nav-pills {
     background-color: #0077c8;
     width: 100%;
+    padding-left: 4%;
+    min-height: 64px;
 }
 li.nav-item a {
     color: #fff;
@@ -46,28 +71,60 @@ li.nav-item a {
 }
 .search-count-text {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 .card {
-	-webkit-box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
-	-moz-box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
-	box-shadow: 0px 1px 2px 3px rgba(238,238,238,1);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    border-radius: 0;
 }
 .card-heade.row {
-    border-bottom: 1px solid #ccc;
     padding-top: 10px;
+}
+hr.divider {
+    border-color: #bababa;
+    margin: 0;
+}
+.college-name h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.col-7.college-name {
+    padding-left: 5px;
+}
+.col-5.college-pic {
+    padding-right: 0;
 }
 .match-title p {
 	background-color: #0077c8;
     color: #fff;
     text-align: center;
-    line-height: 35px;
-    font-size: 1.2rem;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+.college-name p {
+    color: #505050;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 18px;
 }
 .match-text p {
 	text-align: center;
 	width: 90%;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin: auto;
+}
+.match-text p .bold {
+    font-weight: 700;
+    font-size: 14px;
 }
 .card-statastics {
 	text-align: center;
@@ -82,17 +139,17 @@ li.nav-item a {
 	font-size: 28px;
 }
 .card-statastics.row p {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    line-height: 14px;
 }
 .card-match {
     border: 1px solid #e9e9e9;
     margin-bottom: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 12px;
 }
 .avrg-range p {
     white-space: nowrap;
-    color: purple;
+    color: #702f8a;
     padding-top: 8px;
     font-size: 0.8rem;
 }
@@ -117,6 +174,8 @@ li.nav-item a {
 }
 .tooltip-inner {
     background-color: #0077c8;
+    font-weight: 900;
+    font-size: 13px;
 }
 .tooltip-arrow,
 .your-point + .tooltip > .tooltip-inner {background-color: #0077c8;}
@@ -130,28 +189,28 @@ li.nav-item a {
     border-right: 1px solid #a8a8a8;
     width: 90%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 35px;
     padding-top: 8px;
 }
 a.active .checkbox {
 	background-image: url(../img/radio-check.png);
-    width: 14px;
-    height: 13px;
-    display: block;
-    margin: auto;
 }
 a .checkbox {
 	background-image: url(../img/radio.png);
-    width: 14px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
     display: block;
     margin: auto;
+    margin-top: 3px;
 }
 .btn.add {
-    width: 54px;
-    font-size: 0.8rem;
+    width: 48px;
+    font-size: 11px;
     border-radius: 0;
     padding: 6px;
+    line-height: 16px;
+    height: 48px;
+    font-weight: 500;
 }
 button.btn.btn-outline-dark.add.added-btn {
     background-color: #308039;
@@ -159,6 +218,19 @@ button.btn.btn-outline-dark.add.added-btn {
     opacity: 1;
     border: 0;
     display: none;
+}
+.card-statastics.row p.amount {
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.search-count-text p {
+    font-size: 16px;
+    color: #505050;
+}
+.search-count-text p .bold {
+    font-weight: 700;
 }
 label.min-lim-num {
     margin: 0;
@@ -172,10 +244,29 @@ label.max-lim-num {
 }
 .filter-container .btn.btn-block {
     border-radius: 0;
+    border-color: #888888;
+    color: #505050;
+    font-size: 16px;
+    min-height: 48px;
 }
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
+.row-fluid.filter-container {
+    margin-bottom: 14px;
+}
+.college-pic img {
+    width: 100%;
+}
+.filter-container .btn.btn-block:hover, .filter-container .btn.btn-block:focus, .filter-container .btn.btn-block:active {
+    background-color: #505050;
+    color: #fff;
+}
 
+@media (max-width: 320px) { 
+.col-3.add-btn-cont {
+    padding-left: 10px;
+}
+.card-statastics .col-4 {
+    padding: 0px 14px;
+}
 
 
 }
