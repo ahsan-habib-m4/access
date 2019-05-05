@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>College list</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+      <div class="header-title">
+        <h3 class="title"><img src="img/access.png" alt="access"></h3>
+      </div>
+    </nav>
+
+    <div class="container-fluid main-container">
+      <div class="row-fluid cl-logo">
+        <img src="img/cl-logo.png" alt="College list">
+      </div>
+      <div class="row-fluid list-header-text">
+        <p class="title">LaurieAnn's College List</p>
+        <p class="earn">Earn a Strenthen Scholarship</p>
+        <p class="earn-txt">Earn an entry for creting a balance list of 3 reach colleges, 2 match colleges, and 1 safety college.</p>
+        <p class="kepp-up">Nice work! You're already on your way.</p>
+      </div>
+      <div class="row selection-button-div">
+        <div class="col-4 college-type-div">
+          <p class="type">Reach</p>
+          <p class="clg">Colleges</p>
+          <label class="reach2 count-img"></label>
+        </div>
+        <div class="col-4 college-type-div">
+          <p class="type">Match</p>
+          <p class="clg">Colleges</p>
+          <label class="match0 count-img"></label>
+        </div>
+        <div class="col-4 college-type-div">
+          <p class="type">Safety</p>
+          <p class="clg">Colleges</p>
+          <label class="safety1 count-img"></label>
+        </div>
+        <p class="based-on">Based on SAT score: <spna class="bold">1060</spna>&#160;&#160;<img src="img/score-star.png" alt="score"></p>
+        <button type="button" class="btn btn-yellow etr-sat-score" style="display: none;">Enter an SAT or ACT Score</button>
+        <button type="button" class="btn btn-yellow">Keep Adding Colleges +</button>
+        <button type="button" class="btn btn-gray">Add Schools To Your List +</button>
+      </div>
+    </div>
+    <div class="row clg-lst-ttle">
+      <p>YOUR COLLEGES</p>
+    </div>
+    <div class="container-fluid main-container">
+      <!-- Reach school -->
+      <div class="row-fluid college-list-cont reach-college">
+        <div class="row college-type-div">
+          <p class="type">Reach Colleges</p>
+          <label class="reach2 count-img"></label>
+          <p class="choose-more">Choose 1 more</p>
+        </div>
+        <div class="container-fluid card">
+          <div class="card-heade row">
+            <div class="col-9">
+              <div class="row">
+                <div class="col-5 college-pic">
+                  <img src="img/uni-image.png">
+                </div>
+                <div class="col-7 college-name">
+                  <h4>Montchair State University</h4>
+                  <p class="college-loc">Montchair, NJ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 add-btn-cont">
+              <!-- Set display none when added -->
+              <button type="button" class="btn btn-outline-dark add add-btn" style="display: none;"><img src="img/add.png" alt="add"></br>Add</button>
+              <!-- Set display block when added -->
+              <button type="button" class="btn btn-outline-dark add added-btn" style="display: block;"><img src="img/added.png" alt="added"></br>Added</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="card-statastics row">
+            <div class="col-4">
+              <img src="img/gratuate.png" alt="gratuate"><br/>
+              <p class="amount">65%</p>
+              <p>Gratuate rate</p>
+            </div>
+            <div class="col-4">
+              <img src="img/cost.png" alt="avg cost"><br/>
+              <p class="amount">$9K</p>
+              <p>Avg cost after aid</p>
+            </div>
+            <div class="col-4">
+              <img src="img/undergrate.png" alt="Under grate"><br/>
+              <p class="amount">3K</p>
+              <p>Total undergrades</p>
+            </div>
+          </div>
+          <div class="card-match">
+            <div class="match-title">
+              <p>Match</p>
+            </div>
+            <div class="match-text">
+              <p>Your <span class="bold">Estimated SAT is lower</span> than the average score range of admitted and enrolled students</p>
+            </div>
+            <div class="match-range-cont">
+              <label class="min-lim-num">600</label>
+              <div class="range-bar">
+                <!-- 
+                rangeMin=600,rangeMax=1600,you=1000
+                ((1000 - 600) * 100) / (1600 - 600) = 40%
+                -->
+                <div class="your-point" style="left: 40%;" data-toggle="tooltip" data-placement="top" title="YOU"></div>
+                <!--
+                  ((990 - 600) * 100) / (1600 - 600) = 39%
+                  ((1150 - 600) * 100) / (1600 - 600) = 55%
+                  width = 55 - 39 = 16%
+                -->
+                <div class="avrg-range" style="left: 39%; width: 16%"><p>990-1150</p></div>
+                <label class="max-lim-num">1600</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-white">Add Reach Schools +</button>
+      </div>
+
+      <!-- Match schoole --> 
+
+      <div class="row-fluid college-list-cont">
+        <div class="row college-type-div">
+          <p class="type">Match Colleges</p>
+          <label class="match1 count-img"></label>
+          <p class="choose-more">Choose 1 more</p>
+        </div>
+        <div class="container-fluid card">
+          <div class="card-heade row">
+            <div class="col-9">
+              <div class="row">
+                <div class="col-5 college-pic">
+                  <img src="img/uni-image.png">
+                </div>
+                <div class="col-7 college-name">
+                  <h4>Montchair State University</h4>
+                  <p class="college-loc">Montchair, NJ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 add-btn-cont">
+              <!-- Set display none when added -->
+              <button type="button" class="btn btn-outline-dark add add-btn" style="display: none;"><img src="img/add.png" alt="add"></br>Add</button>
+              <!-- Set display block when added -->
+              <button type="button" class="btn btn-outline-dark add added-btn" style="display: block;"><img src="img/added.png" alt="added"></br>Added</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="card-statastics row">
+            <div class="col-4">
+              <img src="img/gratuate.png" alt="gratuate"><br/>
+              <p class="amount">65%</p>
+              <p>Gratuate rate</p>
+            </div>
+            <div class="col-4">
+              <img src="img/cost.png" alt="avg cost"><br/>
+              <p class="amount">$9K</p>
+              <p>Avg cost after aid</p>
+            </div>
+            <div class="col-4">
+              <img src="img/undergrate.png" alt="Under grate"><br/>
+              <p class="amount">3K</p>
+              <p>Total undergrades</p>
+            </div>
+          </div>
+          <div class="card-match">
+            <div class="match-title">
+              <p>Match</p>
+            </div>
+            <div class="match-text">
+              <p>Your <span class="bold">Estimated SAT is lower</span> than the average score range of admitted and enrolled students</p>
+            </div>
+            <div class="match-range-cont">
+              <label class="min-lim-num">600</label>
+              <div class="range-bar">
+                <!-- 
+                rangeMin=600,rangeMax=1600,you=1000
+                ((1000 - 600) * 100) / (1600 - 600) = 40%
+                -->
+                <div class="your-point" style="left: 40%;" data-toggle="tooltip" data-placement="top" title="YOU"></div>
+                <!--
+                  ((990 - 600) * 100) / (1600 - 600) = 39%
+                  ((1150 - 600) * 100) / (1600 - 600) = 55%
+                  width = 55 - 39 = 16%
+                -->
+                <div class="avrg-range" style="left: 39%; width: 16%"><p>990-1150</p></div>
+                <label class="max-lim-num">1600</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-white">Add Match Schools +</button>
+      </div>
+
+      <!-- Safety school -->
+      <div class="row-fluid college-list-cont">
+        <div class="row college-type-div">
+          <p class="type">Safety Colleges</p>
+          <label class="safety1 count-img"></label>
+          <p class="choose-more have-college">You have 1 safety college</p>
+        </div>
+        <div class="container-fluid card">
+          <div class="card-heade row">
+            <div class="col-9">
+              <div class="row">
+                <div class="col-5 college-pic">
+                  <img src="img/uni-image.png">
+                </div>
+                <div class="col-7 college-name">
+                  <h4>Montchair State University</h4>
+                  <p class="college-loc">Montchair, NJ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 add-btn-cont">
+              <!-- Set display none when added -->
+              <button type="button" class="btn btn-outline-dark add add-btn" style="display: none;"><img src="img/add.png" alt="add"></br>Add</button>
+              <!-- Set display block when added -->
+              <button type="button" class="btn btn-outline-dark add added-btn" style="display: block;"><img src="img/added.png" alt="added"></br>Added</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="card-statastics row">
+            <div class="col-4">
+              <img src="img/gratuate.png" alt="gratuate"><br/>
+              <p class="amount">65%</p>
+              <p>Gratuate rate</p>
+            </div>
+            <div class="col-4">
+              <img src="img/cost.png" alt="avg cost"><br/>
+              <p class="amount">$9K</p>
+              <p>Avg cost after aid</p>
+            </div>
+            <div class="col-4">
+              <img src="img/undergrate.png" alt="Under grate"><br/>
+              <p class="amount">3K</p>
+              <p>Total undergrades</p>
+            </div>
+          </div>
+          <div class="card-match">
+            <div class="match-title">
+              <p>Match</p>
+            </div>
+            <div class="match-text">
+              <p>Your <span class="bold">Estimated SAT is lower</span> than the average score range of admitted and enrolled students</p>
+            </div>
+            <div class="match-range-cont">
+              <label class="min-lim-num">600</label>
+              <div class="range-bar">
+                <!-- 
+                rangeMin=600,rangeMax=1600,you=1000
+                ((1000 - 600) * 100) / (1600 - 600) = 40%
+                -->
+                <div class="your-point" style="left: 40%;" data-toggle="tooltip" data-placement="top" title="YOU"></div>
+                <!--
+                  ((990 - 600) * 100) / (1600 - 600) = 39%
+                  ((1150 - 600) * 100) / (1600 - 600) = 55%
+                  width = 55 - 39 = 16%
+                -->
+                <div class="avrg-range" style="left: 39%; width: 16%"><p>990-1150</p></div>
+                <label class="max-lim-num">1600</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-white">Add Safety Schools +</button>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

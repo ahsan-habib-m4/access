@@ -193,16 +193,21 @@ hr.divider {
     margin-top: 35px;
     padding-top: 8px;
 }
-a.active .checkbox {
-	background-image: url(../img/radio-check.png);
+.nav-item .nav-link input[type="radio"] {
+    display: none;
 }
-a .checkbox {
-	background-image: url(../img/radio.png);
+.nav-item .nav-link input[type=radio]:checked + label {
+    background-image: url(../img/radio-check.png);
+    height: 16px;
+    width: 16px;
+}
+.nav-item .nav-link input[type=radio] + label {
+    background-image: url(../img/radio.png);
     width: 16px;
     height: 16px;
     display: block;
     margin: auto;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 .btn.add {
     width: 48px;
@@ -380,6 +385,183 @@ select.form-control {
     font-family: 'Roboto Slab', serif;
     letter-spacing: 0.4px;
     text-decoration: underline !important;
+}
+
+/* College list logo */
+.cl-logo {
+    text-align: center;
+}
+.list-header-text {
+    text-align: center;
+    padding: 0px 5px;
+}
+.list-header-text .title {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+.list-header-text .earn {
+    font-weight: 700;
+    font-size: 22px;
+}
+.list-header-text p.earn-txt {
+    font-size: 18px;
+    line-height: 24px;
+}
+.list-header-text p.kepp-up {
+    font-weight: 700;
+    font-size: 18px;
+}
+.selection-button-div {
+    border-top: 4px solid #338037;
+    text-align: center;
+    padding-top: 10px;
+    width: 98%;
+    margin: auto;
+}
+.reach0 {
+    background-image: url(../img/reach0.png);
+    height: 16px;
+    width: 55px;
+}
+.reach1 {
+    background-image: url(../img/reach1.png);
+    height: 16px;
+    width: 55px;
+}
+.reach2 {
+    background-image: url(../img/reach2.png);
+    height: 16px;
+    width: 55px;
+}
+.reach3 {
+    background-image: url(../img/reach3.png);
+    height: 16px;
+    width: 55px;
+}
+.match0 {
+    background-image: url(../img/match0.png);
+    height: 16px;
+    width: 35px;
+}
+.match1 {
+    background-image: url(../img/match1.png);
+    height: 16px;
+    width: 35px;
+}
+.match2 {
+    background-image: url(../img/match2.png);
+    height: 16px;
+    width: 35px;
+}
+.safetly0 {
+    background-image: url(../img/safety0.png);
+    height: 16px;
+    width: 35px;
+}
+.safety1 {
+    background-image: url(../img/safety1.png);
+    height: 16px;
+    width: 16px;
+}
+.row.selection-button-div {
+    text-align: center;
+}
+.college-type-div p.type {
+    margin: 0;
+    font-weight: 700;
+}
+.college-type-div p.clg {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+p.based-on {
+    width: 100%;
+    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px dashed #cfcfcf;
+    padding: 5px 0px;
+}
+p.based-on .bold {
+    font-weight: 700;
+}
+p.based-on img {
+    margin-top: -2px;
+}
+button.btn.btn-yellow {
+    background-color: #FEDB00;
+    font-family: 'Roboto Slab', serif;
+    margin: auto;
+    border-radius: 0;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #979797;
+    height: 50px;
+}
+button.btn.btn-gray {
+    background-color: #cfcfcf;
+    font-family: 'Roboto Slab', serif;
+    margin: auto;
+    border-radius: 0;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #979797;
+    height: 50px;
+}
+.clg-lst-ttle {
+    color: #fff;
+    background-color: #0077c8;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    display: block;
+    line-height: 27px;
+}
+.college-list-cont .college-type-div {
+    text-align: center;
+    display: block;
+    border-top: 3px solid #0077c8;
+    padding-top: 4px;
+}
+.college-list-cont .college-type-div label {
+    margin-bottom: 0px;
+}
+.college-list-cont .college-type-div .choose-more {
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: -4px;
+}
+button.btn.btn-white {
+    background-color: #fff;
+    font-family: 'Roboto Slab', serif;
+    margin: auto;
+    border-radius: 0;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 24px;
+    border: 1px solid #979797;
+    height: 50px;
+}
+.clg-lst-ttle p {
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.row-fluid.college-list-cont {
+    padding-bottom: 48px;
+}
+p.choose-more.have-college {
+    color: #308039;
+}
+.reach-college .row.college-type-div {
+    border: 0;
+    padding-top: 0;
 }
 @media (max-width: 320px) { 
 .col-3.add-btn-cont {
