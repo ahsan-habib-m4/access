@@ -490,7 +490,7 @@ p.based-on .bold {
 p.based-on img {
     margin-top: -2px;
 }
-button.btn.btn-yellow {
+a.btn.btn-yellow {
     background-color: #FEDB00;
     font-family: 'Roboto Slab', serif;
     margin: auto;
@@ -499,9 +499,10 @@ button.btn.btn-yellow {
     width: 100%;
     margin-top: 5px;
     border: 1px solid #979797;
+    line-height: 33px;
     height: 50px;
 }
-button.btn.btn-gray {
+a.btn.btn-gray {
     background-color: #cfcfcf;
     font-family: 'Roboto Slab', serif;
     margin: auto;
@@ -537,7 +538,7 @@ button.btn.btn-gray {
     font-size: 12px;
     margin-top: -4px;
 }
-button.btn.btn-white {
+a.btn.btn-white {
     background-color: #fff;
     font-family: 'Roboto Slab', serif;
     margin: auto;
@@ -547,6 +548,7 @@ button.btn.btn-white {
     margin-top: 24px;
     border: 1px solid #979797;
     height: 50px;
+    line-height: 33px;
 }
 .clg-lst-ttle p {
     margin-bottom: 0;
