@@ -603,6 +603,20 @@ button.btn.btn-light.bell-button {
     right: 20px;
     top: 12px;
 }
+/* My Action plan style */
+.my-act-plan-page .container-fluid.main-container {
+    padding-top: 0px;
+}
+button.btn.search-btn {
+    padding: 0;
+    margin-right: 10px;
+    border: 0;
+}
+button.btn.user-btn {
+    padding: 0;
+    margin-right: 10px;
+    border: 0;
+}   
 .my-act-plan {
     min-height: 120px;
     background-color: #0077c8;
@@ -645,9 +659,9 @@ button.btn.btn-light.bell-button {
 .cb-stepper.tss-block ol li img {
     border-radius: 50%;
     display: inline-block;
-    height: 78px;
-    min-height: 78px;
-    min-width: 78px;
+    height: 64px;
+    min-height: 64px;
+    min-width: 64px;
 }
  .cb-stepper.tss-block ol li {
     display: -webkit-box;
@@ -662,19 +676,21 @@ button.btn.btn-light.bell-button {
     margin-bottom: 48px;
 }
 .cb-stepper.tss-block ol li:nth-last-child(2):after {
-    height: calc(100% - 42px);
+    height: calc(100% - 27px);
 }
 .cb-stepper.tss-block ol li .tss-content .tss-title {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 24px;
     margin: 5px 0;
     padding-left: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
 }
 .cb-stepper.tss-block ol li .tss-content p {
     display: inline;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 20px;
     padding-left: 0;
 }
 .cb-stepper:not(.cb-stepper-simple) ol li::after, .cb-stepper:not(.cb-stepper-simple) ul li::after {
@@ -685,12 +701,14 @@ button.btn.btn-light.bell-button {
 }
 .cb-stepper.tss-block ol li:after {
     background: #d9d9d9;
-    height: calc(100% - 62px);
-    left: 46px;
-    top: 82px;
-    width: 2px;
+    height: calc(100% - 47px);
+    left: 40px;
+    top: 67px;
+    width: 3px;
 }
-
+.cb-stepper.tss-block ol li a {
+    color: #3a913f;
+}
 .cb-stepper ol li::after, .cb-stepper ul li::after {
     height: 2px;
     width: -webkit-calc(100% - 44px);
@@ -707,14 +725,14 @@ button.btn.btn-light.bell-button {
     border-right: 3px solid #d9d9d9;
     border-top: 3px solid #d9d9d9;
     content: "";
-    height: 20px;
-    left: 37px;
+    height: 16px;
+    left: 34px;
     position: absolute;
-    top: -28px;
+    top: -23px;
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
-    width: 20px;
+    width: 16px;
 }
 .cb-stepper.tss-block ol li:last-child:after {
     height: 0;
@@ -722,7 +740,7 @@ button.btn.btn-light.bell-button {
 }
 .container.what-to-do {
     background-color: #f0f0f0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .what-to-do h2.lg-title {
     font-family: 'Roboto Slab', serif;
@@ -732,10 +750,12 @@ button.btn.btn-light.bell-button {
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 20px;
+    margin-bottom: 0;
 }
 .what-to-do h3.title {
     font-size: 19px;
     line-height: 24px;
+    font-weight: 700;
     font-family: 'Roboto Slab', serif;
 }
 .what-to-do p.title-p {
@@ -744,20 +764,27 @@ button.btn.btn-light.bell-button {
     font-family: 'Roboto', sans-serif;
 }
 .what-to-do img.tss-image {
-    max-width: 64px;
+    width: 64px;
     float: none;
     margin: auto;
     left: 0;
     right: 0;
     display: block;
-        margin-top: 20px;
+    margin-top: 20px;
+    height: 64px;
     margin-bottom: 20px;
+}
+.what-to-do hr.hr {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    border-color: #d9d9d9;
 }
 .what-to-do .row-fluid.wtd-card {
     background-color: #fff;
     border: 1px solid #d9d9d9;
     margin-bottom: 15px;
     padding: 20px;
+    padding-bottom: 35px;
 }
 .what-to-do .gray-box {
     padding: 12px;
@@ -775,10 +802,12 @@ button.btn.btn-light.bell-button {
     font-size: 14px;
     line-height: 20px;
     margin-top: 24px;
+    margin-bottom: 12px;
 }
 p.small-text {
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 24px;
 }
 button.btn.yellow-small-btn {
     width: 120px;
@@ -787,8 +816,27 @@ button.btn.yellow-small-btn {
     background-color: #fedb00;
     border-radius: 0;
     margin: auto;
+    font-weight: 700;
     display: block;
     font-family: 'Roboto Slab', serif;
+}
+.what-to-do p.next.long-text {
+    margin-bottom: 24px;
+}
+b.bold-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+.row-fluid.wtd-card.complete p.next {
+    margin-bottom: 0;
+}
+.container.what-to-do.next {
+    padding-bottom: 10px;
+}
+.container.what-to-do.next p.radio-txt {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
 }
 .midil-div .img {
     float: left;
@@ -814,7 +862,7 @@ button.btn.yellow-small-btn {
 .border-box a {
     float: right;
     padding-right: 12px;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: normal;
 }
 button.btn.light-gray-btn {
@@ -826,17 +874,21 @@ button.btn.light-gray-btn {
     margin: auto;
 }
 .my-act-plan-page img.college-board {
-    min-height: 44px;
+    min-height: 36px;
+    float: left;
 }
 .my-act-plan-page nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding: 0;
     background-color: #1e1e1e!important;
-    height: 44px;
+    height: 36px;
 }
-.ham-bar{
-    height: 20px;
-    width: 20px;
-    background-image: url(../img/ham-bar.png);
+.my-act-plan-page .navbar-light .navbar-brand {
+    background-color: #000;
+    min-width: 44px;
+    padding: 0;
+    text-align: center;
+    height: 36px;
+    margin: 0;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.second {
     background-color: #fff !important;
@@ -847,15 +899,28 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.second p {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     color: #1e1e1e;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 15px;
+    margin: 0;
 }
 .ham-bar {
-    height: 12px;
-    width: 12px;
-    background-image: url(../img/ham-bar.png);
     border: 0;
-    margin-right: 15px;
+    margin-right: 5px;
+    font-size: 13px;
+    background-color: transparent;
+    color: #000000;
+}
+.container.what-to-do.next .lg-title {
+    padding-top: 0;
+}
+.radio-cont .radio label.radio-lbl {
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 0;
+}
+.radio-cont {
+    margin-bottom: 20px;
 }
 @media (max-width: 320px) { 
 .col-3.add-btn-cont {
