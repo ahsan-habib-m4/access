@@ -58,21 +58,5 @@ $( document ).ready(function() {
 		$("#srcBySaftety").parent("a").addClass('active');
 	}
 
-/*	$.ajax({
-method: "GET",
-url: "https://collegeapis.herokuapp.com/api/v1/schools/?format=json",
-success: success,
-dataType: "json"
-});
-
-function success(res) {
-alert(res);
-}
-
-$.get( "https://collegeapis.herokuapp.com/api/v1/schools/?format=json", function( data ) {
-// $( ".result" ).html( data );
-alert( "Load was performed." + data );
-});*/
-
 });
   

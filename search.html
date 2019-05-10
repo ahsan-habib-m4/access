@@ -46,135 +46,10 @@
       <div class="row-fluid search-count-text">
         <p><span class="bold">327 colleges</span> matching your selection</p>
       </div>
-      <div class="container-fluid card">
-        <div class="card-heade row">
-          <div class="col-9">
-            <div class="row">
-              <div class="col-5 college-pic">
-                <img src="img/uni-image.png">
-              </div>
-              <div class="col-7 college-name">
-                <h4>Montchair State University</h4>
-                <p class="college-loc">Montchair, NJ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 add-btn-cont">
-            <!-- Set display none when added -->
-            <button type="button" class="btn btn-outline-dark add add-btn" style="display: none;"><img src="img/add.png" alt="add"></br>Add</button>
-            <!-- Set display block when added -->
-            <button type="button" class="btn btn-outline-dark add added-btn" style="display: block;"><img src="img/added.png" alt="added"></br>Added</button>
-          </div>
-        </div>
-        <hr class="divider">
-        <div class="card-statastics row">
-          <div class="col-4">
-            <img src="img/gratuate.png" alt="gratuate"><br/>
-            <p class="amount">65%</p>
-            <p>Gratuate rate</p>
-          </div>
-          <div class="col-4">
-            <img src="img/cost.png" alt="avg cost"><br/>
-            <p class="amount">$9K</p>
-            <p>Avg cost after aid</p>
-          </div>
-          <div class="col-4">
-            <img src="img/undergrate.png" alt="Under grate"><br/>
-            <p class="amount">3K</p>
-            <p>Total undergrades</p>
-          </div>
-        </div>
-        <div class="card-match">
-          <div class="match-title">
-            <p>Match</p>
-          </div>
-          <div class="match-text">
-            <p>Your <span class="bold">Estimated SAT is lower</span> than the average score range of admitted and enrolled students</p>
-          </div>
-          <div class="match-range-cont">
-            <label class="min-lim-num">600</label>
-            <div class="range-bar">
-              <!-- 
-              rangeMin=600,rangeMax=1600,you=1000
-              ((1000 - 600) * 100) / (1600 - 600) = 40%
-              -->
-              <div class="your-point" style="left: 40%;" data-toggle="tooltip" data-placement="top" title="YOU"></div>
-              <!--
-                ((990 - 600) * 100) / (1600 - 600) = 39%
-                ((1150 - 600) * 100) / (1600 - 600) = 55%
-                width = 55 - 39 = 16%
-              -->
-              <div class="avrg-range" style="left: 39%; width: 16%"><p>990-1150</p></div>
-              <label class="max-lim-num">1600</label>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="container-fluid card">
-        <div class="card-heade row">
-          <div class="col-9">
-            <div class="row">
-              <div class="col-5 college-pic">
-                <img src="img/uni-image.png">
-              </div>
-              <div class="col-7 college-name">
-                <h4>Montchair State University</h4>
-                <p class="college-loc">Montchair, NJ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 add-btn-cont">
-            <!-- Set display none when added -->
-            <button type="button" class="btn btn-outline-dark add add-btn" style="display: block;"><img src="img/add.png" alt="add"></br>Add</button>
-            <!-- Set display block when added -->
-            <button type="button" class="btn btn-outline-dark add added-btn" style="display: none;"><img src="img/added.png" alt="added"></br>Added</button>
-          </div>
-        </div>
-        <hr class="divider">
-        <div class="card-statastics row">
-          <div class="col-4">
-            <img src="img/gratuate.png" alt="gratuate"><br/>
-            <p class="amount">65%</p>
-            <p>Gratuate rate</p>
-          </div>
-          <div class="col-4">
-            <img src="img/cost.png" alt="avg cost"><br/>
-            <p class="amount">$9K</p>
-            <p>Avg cost after aid</p>
-          </div>
-          <div class="col-4">
-            <img src="img/undergrate.png" alt="Under grate"><br/>
-            <p class="amount">3K</p>
-            <p>Total undergrades</p>
-          </div>
-        </div>
-        <div class="card-match">
-          <div class="match-title">
-            <p>Match</p>
-          </div>
-          <div class="match-text">
-            <p>Your <span class="bold">Estimated SAT is lower</span> than the average score range of admitted and enrolled students</p>
-          </div>
-          <div class="match-range-cont">
-            <label class="min-lim-num">600</label>
-            <div class="range-bar">
-              <!-- 
-              rangeMin=600,rangeMax=1600,you=1000
-              ((1000 - 600) * 100) / (1600 - 600) = 40%
-              -->
-              <div class="your-point" style="left: 40%;" data-toggle="tooltip" data-placement="top" title="YOU"></div>
-              <!--
-                ((990 - 600) * 100) / (1600 - 600) = 39%
-                ((1150 - 600) * 100) / (1600 - 600) = 55%
-                width = 55 - 39 = 16%
-              -->
-              <div class="avrg-range" style="left: 39%; width: 16%"><p>990-1150</p></div>
-              <label class="max-lim-num">1600</label>
-            </div>
-          </div>
-        </div>
+      <div id="card-holder">
       </div>
+      
     </div>
     <!-- Filter modal-->
     
@@ -278,9 +153,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js//jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/search.js"></script>
+    
   </body>
 </html>
