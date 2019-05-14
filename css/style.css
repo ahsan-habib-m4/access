@@ -654,7 +654,7 @@ button.btn.user-btn {
 }
 .cb-stepper.tss-block ol li .tss-content {
     display: inline-block;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .cb-stepper.tss-block ol li img {
     border-radius: 50%;
@@ -685,13 +685,16 @@ button.btn.user-btn {
     padding-left: 0;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
+    color: #505050;
 }
 .cb-stepper.tss-block ol li .tss-content p {
-    display: inline;
+    display: block;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     padding-left: 0;
+    color: #505050;
+    margin-bottom: 0;
 }
 .cb-stepper:not(.cb-stepper-simple) ol li::after, .cb-stepper:not(.cb-stepper-simple) ul li::after {
     height: 100%;
@@ -702,12 +705,21 @@ button.btn.user-btn {
 .cb-stepper.tss-block ol li:after {
     background: #d9d9d9;
     height: calc(100% - 47px);
-    left: 40px;
+    left: 39px;
     top: 67px;
     width: 3px;
 }
-.cb-stepper.tss-block ol li a {
+.cb-stepper.tss-block ol li a .scnd-p {
     color: #3a913f;
+    font-weight: 700;
+}
+.cb-stepper.tss-block ol li a .scnd-p.normal {
+    color: #505050;
+    font-weight: normal;
+}
+.cb-stepper.tss-block ol li a:hover {
+    color: #0056b3;
+    text-decoration: none;
 }
 .cb-stepper ol li::after, .cb-stepper ul li::after {
     height: 2px;
@@ -726,7 +738,7 @@ button.btn.user-btn {
     border-top: 3px solid #d9d9d9;
     content: "";
     height: 16px;
-    left: 34px;
+    left: 33px;
     position: absolute;
     top: -23px;
     -webkit-transform: rotate(135deg);
@@ -741,6 +753,20 @@ button.btn.user-btn {
 .container.what-to-do {
     background-color: #f0f0f0;
     padding-bottom: 10px;
+}
+.row-fluid.strengthen-div div {
+    display: block;
+    padding: 0;
+    float: left;
+    padding: 0px 3px;
+}
+.row-fluid.strengthen-div div img {
+    float: right;
+}
+.what-to-do .row-fluid.wtd-card .row.selection-button-div {
+    border-bottom: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
 }
 .what-to-do h2.lg-title {
     font-family: 'Roboto Slab', serif;
@@ -850,7 +876,7 @@ b.bold-text {
     margin-bottom: 5px;
 }
 .border-box {
-        font-size: 16px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     padding-top: 25px;
@@ -871,7 +897,11 @@ button.btn.light-gray-btn {
     background-color: #f2f1ef;
     border-radius: 0;
     display: block;
+    font-size: 14px;
     margin: auto;
+    font-weight: 700;
+    color: #bcbcba;
+    font-family: 'Roboto Slab', serif;
 }
 .my-act-plan-page img.college-board {
     min-height: 36px;
@@ -921,6 +951,28 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.second p {
 }
 .radio-cont {
     margin-bottom: 20px;
+}
+.wtd-card input[type="radio"] {
+    display: none;
+}
+.wtd-card input[type=radio]:checked + label {
+    background-image: url(../img/radio-gray-checked.png);
+}
+.wtd-card input[type=radio] + label {
+    background-image: url(../img/radio-gray.png);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: auto;
+    margin-top: 4px;
+}
+.wtd-card .radio-cont .radio label.radio-lbl {
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 0;
+    vertical-align: top;
 }
 @media (max-width: 320px) { 
 .col-3.add-btn-cont {
