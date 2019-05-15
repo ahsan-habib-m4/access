@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 $.getJSON("https://collegeapis.herokuapp.com/api/v1/schools/?format=json", function(data){
-    for (var i = 0, len = data.length; i < len; i++) {
+    for (var i = 0, len = 10; i < len; i++) {
         var cardHTML = "";
         cardHTML = cardHTML + "<div class='container-fluid card'>";
         cardHTML = cardHTML +    "<div class='card-heade row'>";

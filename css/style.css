@@ -974,6 +974,32 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.second p {
     margin-top: 0;
     vertical-align: top;
 }
+.row-fluid.strengthen-div div.img {
+    width: 64px;
+    background-image: url(../img/strenth_0_6.png);
+    height: 64px;
+}
+.row-fluid.strengthen-div div.img.strenth-image_0_6 {
+    background-image: url(../img/strenth_0_6.png);
+}
+.row-fluid.strengthen-div div.img.strenth-image_1_6 {
+    background-image: url(../img/strenth_1_6.png);
+}
+.row-fluid.strengthen-div div.img.strenth-image_2_6 {
+    background-image: url(../img/strenth_2_6.png);
+}
+.row-fluid.strengthen-div div.img.strenth-image_3_6 {
+    background-image: url(../img/strenth_3_6.png);
+}
+.row-fluid.strengthen-div div.img.strenth-image_4_6 {
+    background-image: url(../img/strenth_4_6.png);
+}
+.row-fluid.strengthen-div div.img.strenth-image_5_6 {
+    background-image: url(../img/strenth_5_6.png);
+}
+.row-fluid.strengthen-div div.img.strenth-image_6_6 {
+    background-image: url(../img/strenth_6_6.png);
+}
 @media (max-width: 320px) { 
 .col-3.add-btn-cont {
     padding-left: 10px;
